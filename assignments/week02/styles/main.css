@@ -1,0 +1,153 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #707070;
+}
+
+body {
+  background-color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.employee-card {
+  width: 70%;
+  height: 30%;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border: 3rem solid #f8f8f8;
+  margin-top: 10%;
+  font-size: 1.4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 31.25% 6.25% 62.5%;
+      grid-template-columns: 31.25% 6.25% 62.5%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: " left    .    right  ";
+}
+
+@media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
+  .employee-card {
+    width: 90%;
+    margin-top: 0;
+    border: 1rem solid #f8f8f8;
+    padding: .8rem;
+    -ms-grid-columns: 5% 90% 5%;
+        grid-template-columns: 5% 90% 5%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: ". left ." ". right .";
+  }
+}
+
+.employee-card-main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+}
+
+@media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
+  .employee-card-main {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.employee-card-main-img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.employee-card-main-title, .employee-card-main-sub {
+  width: auto;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.employee-card-main-title {
+  font-size: 1.8rem;
+}
+
+.employee-card-main-sub {
+  font-style: italic;
+}
+
+.employee-card-aside {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: right;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-top: .8rem;
+}
+
+@media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
+  .employee-card-aside {
+    font-size: 1rem;
+  }
+}
+
+.employee-card-aside ul {
+  list-style: none;
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+}
+
+@media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
+  .employee-card-aside ul {
+    list-style: none;
+    -webkit-padding-start: 10px;
+            padding-inline-start: 10px;
+    text-align: center;
+  }
+}
+
+.employee-card-aside ul li {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
+  .employee-card-aside ul li {
+    margin-top: .8rem;
+  }
+}
+
+.employee-card-aside ul p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
+  .employee-card-aside ul p {
+    display: inline;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.employee-card-aside ul p img {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
+  .employee-card-aside ul p img {
+    display: block;
+    width: 20px;
+    padding: 0;
+    margin: 1rem auto .5rem auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
