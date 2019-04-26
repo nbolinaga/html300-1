@@ -51,12 +51,11 @@
       }
   
       &-title {
-        font-size: 1.8rem;
+        @include font-headers;
       }
   
       &-sub {
         font-style: italic;
-  
       }
     }
   
@@ -91,8 +90,7 @@
         }
   
         p {
-          display: flex;
-          align-content: center;
+          @include horizontal-align;
   
           @include mobile {
             display: inline;

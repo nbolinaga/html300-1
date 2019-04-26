@@ -5,6 +5,19 @@
     }
 }
 
+@mixin font-headers{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+@mixin horizontal-align {
+  margin: 0;
+  position: relative;
+  left: 50%;
+    transform: translateX(-50%);
+}
+
 // GLOBAL SETTINGS --------------------------------------------------------------
 * {
     box-sizing: border-box;
