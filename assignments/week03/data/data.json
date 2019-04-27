@@ -1,5 +1,5 @@
  [{
-  "image": "/images/steve-headshot.jpg",
+  "image": "images/steve-headshot.jpg",
   "name": "Steve Smith",
   "jobTitle": "Project Manager",
   "Company": "Front End Dev Co",
@@ -9,7 +9,7 @@
   "Email": "steve@fedc.com",
   "LinkedInUrl": "steve.linkedinprofile.com"
 }, {
-  "image": "/images/aaron-headshot.png",
+  "image": "images/aaron-headshot.png",
   "name": "Aaron Katz",
   "jobTitle": "Full Stack Developer",
   "Company": "Web Sites and More",
@@ -19,7 +19,7 @@
   "Email": "aaronNotMyEmail@uw.com",
   "LinkedInUrl": "aaron.linkedinprofile.com"
 }, {
-  "image": "/images/kyle-headshot.png",
+  "image": "images/kyle-headshot.png",
   "name": "Kyle Hendricks",
   "jobTitle": "Starting Pitcher",
   "Company": "Chicago Cubs",
@@ -29,7 +29,7 @@
   "Email": "kyleH@cubs.com",
   "LinkedInUrl": "kyle.linkedinprofile.com"
 },{
-  "image": "/images/michael-headshot.png",
+  "image": "images/michael-headshot.png",
   "name": "Michael Jordan",
   "jobTitle": "Point Guard",
   "Company": "Chicago Bulls",
