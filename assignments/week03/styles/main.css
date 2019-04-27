@@ -7,12 +7,6 @@
 
 body {
   background-color: #212121;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .employee-card {
@@ -21,7 +15,7 @@ body {
   background-color: #ffffff;
   padding: 2.5rem;
   border: 3rem solid #f8f8f8;
-  margin-top: 10%;
+  margin: 5% auto;
   font-size: 1.4rem;
   display: -ms-grid;
   display: grid;
@@ -36,6 +30,7 @@ body {
   .employee-card {
     width: 90%;
     margin-top: 0;
+    margin-bottom: 50px;
     border: 1rem solid #f8f8f8;
     padding: .8rem;
     -ms-grid-columns: 5% 90% 5%;
@@ -133,7 +128,6 @@ body {
 
 @media only screen and (max-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
   .employee-card-aside ul p {
-    display: inline;
     margin: 0 auto 0 auto;
   }
 }

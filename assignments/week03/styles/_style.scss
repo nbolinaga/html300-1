@@ -5,7 +5,7 @@
     background-color: $primary;
     padding: 2.5rem;
     border: 3rem solid $secondary;
-    margin-top: 10%;
+    margin: 5% auto;
     font-size: 1.4rem;
     display: grid;
     grid-template-columns: 31.25% 6.25% 62.5%;
@@ -17,6 +17,7 @@
     @include mobile {
       width: 90%;
       margin-top: 0;
+      margin-bottom: 50px;
       border: 1rem solid $secondary;
       padding: .8rem;
       grid-template-columns: 5% 90% 5%;
@@ -93,7 +94,6 @@
           @include horizontal-align;
   
           @include mobile {
-            display: inline;
             margin: 0 auto 0 auto;
           }
   
