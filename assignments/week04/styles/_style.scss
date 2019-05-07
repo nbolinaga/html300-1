@@ -1,0 +1,59 @@
+// BLOCK to complete left corner when rotating so you dont see the background
+.block {
+  position: fixed;
+  top: 0;
+  content: " ";
+  width: 100px;
+  height: 100px;
+  background-color: $secondary;
+}
+
+// NAV ----------------------------------------------------------------------
+nav {
+  // fixed so its always up top
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // sets origin of transform (in this case rotation) 70px from left margin
+  transform-origin: 70px center;
+  // rotated out of view
+  transform: rotate(-180deg);
+  transition: 1s;
+
+  img {
+    width: 50px;
+    padding: 50px;
+    position: absolute;
+  }
+}
+
+nav:hover {
+  // triggers rotation on hover
+  transform: rotate(0deg);
+}
+
+// LIST ------------------------------------------------------------------------
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: $secondary;
+  border-radius: 50px 0 0 0;
+  margin: 0px;
+  padding: 30px 0px;
+
+
+  .navItem {
+    display: block;
+    padding: 30px 50px;
+    margin: 0 50px;
+    transition-duration: 1s;
+    transform-origin: center center;
+  }
+
+  .navItem:hover {
+    transform: scale(1.5);
+  }
+
+}

@@ -1,0 +1,91 @@
+  body {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-gap: 0px;
+    grid-template-areas:
+      "one one one one one one "
+      "two two two two two two"
+      "three three four four four four"
+      "five five five five five five";
+
+    .section {
+      padding: 20px;
+      font-size: 30px;
+      color: $text;
+      text-align: center;
+      border: 5px solid $alternative;
+
+      &--header {
+        background-color: $header;
+        grid-area: one;
+        height: auto;
+
+      }
+
+      &--nav {
+        background-color: $nav;
+        grid-area: two;
+
+        ul {
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+          font-size: 1.5rem;
+
+        a {
+            color: $alternative;
+        }
+        
+        a:hover {
+            color: $text;
+        }
+
+        }
+      }
+
+      &--aside {
+        background-color: $aside;
+        grid-area: three;
+        height: auto;
+        padding: 50px;
+
+        .side{
+          padding: 50px;
+          padding-bottom: 60px;
+
+          img{
+            border-radius: 10px;
+            padding-top: 10px;
+          }
+          a{
+            background-color: $alternative;
+            padding: 20px;
+            border-radius: 10px;
+          }
+
+          a:hover{
+            color: $aside;
+          }
+        }
+      }
+
+      &--main {
+        background-color: $main;
+        grid-area: four;
+        height: auto;
+        padding: 50px;
+
+        p{
+          margin: 50px;
+        }
+      }
+
+      &--footer {
+        background-color: $footer;
+        grid-area: five;
+        height: auto;
+      }
+    }
+  }

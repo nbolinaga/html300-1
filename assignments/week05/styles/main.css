@@ -1,0 +1,128 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: #1B4965;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-gap: 0px;
+      grid-template-areas: "one one one one one one " "two two two two two two" "three three four four four four" "five five five five five five";
+}
+
+body .section {
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  border: 5px solid black;
+}
+
+body .section--header {
+  background-color: salmon;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: one;
+  height: auto;
+}
+
+body .section--nav {
+  background-color: lightgreen;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: two;
+}
+
+body .section--nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+body .section--nav ul a {
+  color: black;
+}
+
+body .section--nav ul a:hover {
+  color: white;
+}
+
+body .section--aside {
+  background-color: violet;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: three;
+  height: auto;
+  padding: 50px;
+}
+
+body .section--aside .side {
+  padding: 50px;
+  padding-bottom: 60px;
+}
+
+body .section--aside .side img {
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+body .section--aside .side a {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body .section--aside .side a:hover {
+  color: violet;
+}
+
+body .section--main {
+  background-color: gold;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: four;
+  height: auto;
+  padding: 50px;
+}
+
+body .section--main p {
+  margin: 50px;
+}
+
+body .section--footer {
+  background-color: steelblue;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: five;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */
