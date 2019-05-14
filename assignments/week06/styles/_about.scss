@@ -1,0 +1,36 @@
+// ABOUT US ------------------------------------------------------------------------------------------------------------------------------
+.row{
+    display: flex;
+    align-items: center;
+    background-color: $background;
+    margin: 50px auto;
+
+    .col-md, .col-md-5{
+        text-align: center;
+        padding: 30px;
+
+        h2{
+            color: $details;
+            padding: 0 0 30px
+        }
+
+        img{
+            width: 20vw;
+        }
+
+        .email{
+            color: $details;
+        }
+    }
+}
+
+// GITHUB LOGO -------------------------------------------------------------------------------------------------------------------------
+.logo{
+    font-size: 5rem;
+    margin-top: 30px;
+
+    &:hover{
+        opacity: .6;
+    }
+}
+

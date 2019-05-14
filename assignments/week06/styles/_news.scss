@@ -1,0 +1,42 @@
+// NEWS CARDS ------------------------------------------------------------------------------------------------------------------------------
+.container{
+    position: relative;
+    z-index: 100;
+  }
+  .card-columns{
+    @media (min-width: 576px) and (max-width: 1000px) {
+      column-count: 2;
+    }
+    .card{
+      background-color: $background ;
+  
+      .img-thumbnail{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .btn{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        overflow: hidden;
+      }
+      &-title{
+        color: $text !important;
+        font-size: 1.5rem;
+      }
+      &-subtitle{
+        color: $details !important;
+        font-size: 1.25rem;
+      }
+      &-text{
+        font-style: oblique;
+        font-weight: lighter;
+        text-align: justify;
+      }
+      &-footer{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }

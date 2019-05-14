@@ -1,0 +1,122 @@
+// JUMBOTRON -------------------------------------------------------------------------------------------------------------------------------
+.jumbotron {
+  position: relative;
+  z-index: 100;
+  background-color: $background !important;
+  border-radius: 0px;
+}
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+// ARTICLE CARDS ---------------------------------------------------------------------------------------------------------------------------
+.article-card {
+
+  .card {
+    width: 50%;
+    height: auto;
+    background-color: $background;
+    margin: 50px auto;
+    padding: 50px;
+    position: relative;
+    z-index: 999;
+
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+
+    &-title {
+      color: $text;
+      font-size: 2.5rem;
+      font-weight: bold;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-author {
+      color: $details;
+      font-size: 1.5rem;
+      font-style: italic;
+      margin: 10px 0;
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+      }
+    }
+
+    &-img {
+      width: 500px;
+      height: auto;
+      margin: 25px auto;
+      border-radius: 10px;
+    }
+
+    &-description {
+      font-size: 1.2rem;
+      font-style: oblique;
+      font-weight: lighter;
+      text-align: justify;
+      margin: 25px 0;
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+
+    &-time {
+
+      @media (max-width: 600px) {
+        font-size: .5rem;
+        text-align: left;
+      }
+    }
+
+    &-url {
+      // background-color: $primary;
+      color: $background;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
+}
+
+// MORE NEWS BUTTON -----------------------------------------------------------------------------------------------------------------------
+.more {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  padding: 25px 0px;
+  left: 50%;
+  margin-left: -25%;
+}
