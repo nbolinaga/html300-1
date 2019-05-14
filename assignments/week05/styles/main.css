@@ -27,7 +27,7 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0px;
-      grid-template-areas: "one one one one one one " "two two two two two two" "three three four four four four" "five five five five five five";
+      grid-template-areas: " one    one    one   one   one   one" " two    two    two   two   two   two" " three  three  four  four  four  four" " five   five   five  five  five  five";
 }
 
 body .section {
