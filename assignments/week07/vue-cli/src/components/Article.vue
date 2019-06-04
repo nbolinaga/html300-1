@@ -32,7 +32,7 @@ export default ({
   computed: {
     // creates url for API based on month and day, that way news are not older than a week
     url: function () {
-      return `https://newsapi.org/v2/everything?q=video%20games&from=2019-0${this.month}-${this.day-7}&to=2019-0${this.month}-${this.day}&sortBy=relevancy&pageSize=10&apiKey=3fcf435bb9774657a345c3fed0a0462d`
+      return `https://newsapi.org/v2/everything?q=mortgage&from=2019-0${this.month}-${this.day-7}&to=2019-0${this.month}-${this.day}&sortBy=relevancy&pageSize=10&apiKey=3fcf435bb9774657a345c3fed0a0462d`
     }
   },
   mounted() {
@@ -44,6 +44,7 @@ export default ({
       .then(response => (this.info = response.data.articles))
   }
 })
+console.log(info)
 </script>
 
 <style lang="scss">
