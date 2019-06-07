@@ -33,6 +33,8 @@ $(document).ready(function () {
 
     // uses map function to create a article card for each article in the array
     articles.map(function (el, key) {
+      var json = el.publishedAt;     
+      var date = new Date(json);
       // creates div with class card
       const card = document.createElement('div');
       card.setAttribute('class', 'article-card');
@@ -43,7 +45,7 @@ $(document).ready(function () {
         `<section class="card bg-light">
                 <h2 class="card-title">${el.title}</h2>
                 <h3 class="card-author">by ${el.author}</h3>
-                <h5 class="card-time">${el.publishedAt}</h5>
+                <h5 class="card-time">${date}</h5>
                 <img src=${el.urlToImage} onerror=src='assets/no.svg'; alt="" class="card-img img-thumbnail">
                 <p class="card-description">${el.description}</p>
                 <a class="card-url bg-primary" href="${el.url}" target="_blank" data-toggle="tooltip"
