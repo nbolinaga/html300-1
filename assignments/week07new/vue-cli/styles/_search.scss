@@ -1,0 +1,75 @@
+// SEARCHBAR -------------------------------------------------------------------------------------------------------------------------------
+.searchbar {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion {
+  position: relative;
+  z-index: 100;
+}
+
+.news-jumbo {
+  background-color: $secondary !important;
+
+  .lead {
+    color: $background !important;
+  }
+}
+
+// ACCORDION --------------------------------------------------------------------------------------------------------------------------------
+.accordion {
+  margin-bottom: 50px;
+
+  .card-body {
+    background-color: $secondary;
+    position: relative;
+
+    .card {
+      margin-top: 0;
+    }
+  }
+
+  .btn {
+    color: $text;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: none;
+      color: $details;
+      cursor: pointer;
+    }
+
+    &:focus {
+      text-decoration: none;
+      color: $details;
+      outline: none;
+    }
+  }
+}
+
+// BACKGROUNDS -------------------------------------------------------------------------------------------------------------------------------------
+.accordion .card-body::before {
+  background-image: url("bg.jpg");
+  background-size: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: .4;
+  margin: 0;
+  padding: 0;
+
+}
+
+.card-header {
+  background-color: $background;
+}
